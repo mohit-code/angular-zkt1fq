@@ -1,4 +1,25 @@
+<div class="container" [ngStyle]="{'background-image': getUrl(), 'height' : '600px' , 'background-size' : 'contain'}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <hello name="{{ name }}"></hello>
+<h1><b>
+  Tripper Pro
+  </b>
+</h1>
+<br>
+<br>
+<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+<Label>Username: </Label>
+<input type='text' id='username' name=Username ngModel><br><br>
+<Label>Password: </Label>
+<input type='password' id='password' name=Password ngModel><br><br>
+<button type="submit" value='Submit' class="btn-primary">Submit</button><br><br>
+</form>
 <p>
-  Start editing to see some magic happen :)
+  forgot your password?
 </p>
+
+
+ 
+
+
+
